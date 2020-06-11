@@ -38,7 +38,7 @@ if (currentData) {
   setTimeout(function() {
     // localStorage.clear();
     localStorage.removeItem('mocky');
-  }, 60000);
+  }, 300000);
 
 } else {
   window.location.href = 'index.html';
