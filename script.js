@@ -29,14 +29,15 @@ if (currentData) {
       });
     } else {
       const errorMessage = document.createElement('marquee');
-      errorMessage.textContent = `Gah, it's not working!`;
+      errorMessage.textContent = `Erro de conexão com serviço!`;
       app.appendChild(errorMessage);
     }
   }
   request.send();
 
   setTimeout(function() {
-    localStorage.clear();
+    // localStorage.clear();
+    localStorage.removeItem('mocky');
   }, 60000);
 
 } else {
