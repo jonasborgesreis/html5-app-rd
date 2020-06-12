@@ -2,7 +2,7 @@ document.getElementById("myBtn").addEventListener("click", function(event){
 
     const password = document.getElementById("password").value;
     const email = document.getElementById("email").value;
-
+    
     if (email){
         if (password.length >= 5){
             event.preventDefault();
@@ -11,7 +11,7 @@ document.getElementById("myBtn").addEventListener("click", function(event){
         } else {
             event.preventDefault();
             document.getElementById("password").focus();
-            // alert('Dados Incompletos');
+            alert('Dados incorretos!');
         }
     }
 
